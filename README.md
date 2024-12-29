@@ -6,7 +6,12 @@ At the release tab, you will find the complete library for game maker studio 2 a
 
 The server was built to let anyone create their own packets and informations, all you need to know is a basic c# coding skills and patience to test everything :)
 
-<br>Special thanks to FatalSheep and CinderFire for the old basic networking tutorial at the Game maker studio forum (rest in peace tutorial.. XD)
+Special thanks to FatalSheep and CinderFire for the old basic networking tutorial at the Game maker studio forum (rest in peace tutorial.. XD)
+
+## Compiling the server
+In order to compile the server you will need to install Visual Studio 2022 Community edition. <br>
+
+The server is prepared to be compiled either in x86 or x64 bits, and it should be able to run it on windows, linux, and macOs systems without further problems.
 
 ## Creating Packets
 Creating packets is simple: on the client side you can call the the function ``` sn_send_new_packet(); ``` or ``` sn_send_new_nodata_packet(); ``` from the library.
