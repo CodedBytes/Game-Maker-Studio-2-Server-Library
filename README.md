@@ -1,25 +1,16 @@
 # Game-Maker-Studio-2-Server-Library
 Game maker studio 2 tcp netwroking server. 
 
-Everything you need to compile the server is at the Auth Server folder.
+Everything you need to compile the server is at the Auth Server folder.<br>
 At the release tab, you will find the complete library for game maker studio 2 and hovering the functions will explain what everything works.
 
 The server was built to let anyone create their own packets and informations, all you need to know is a basic c# coding skills and patience to test everything :)
-Special thanks to FatalSheep and CinderFire for the old basic networking tutorial at the Game maker studio forum (rest in peace tutorial.. XD)
 
-You can make a basic packet following the code bellow:
-```csharp
-  // Packet building exemple
-  BufferStream buffer = new BufferStream(BufferSize, BufferAlignment);// Start a new packet for the giving minimun size and alignment (should be the same as game maker's client)
-  buffer.Seek(0); // <-- Start the packet from the position 0
-  ushort constant_out = 1007; // <-- the number which the client will recognize (almost like an id for the packet)
-  buffer.Write(constant_out);// <-- Write the information to the packet you're gonna send
-  
-  authServer.SendToAllClients(buffer);// <-- Sends to everyone
-  SendMessage(buffer);// <-- Or you can choose to send it only to the client who sent the fisrt packet to the server.
-```
-On the client side you can call the the function ```gml sn_send_new_packet(); ``` or ```gml sn_send_new_nodata_packet(); ``` from the client library.
-<br> For the ```gml sn_send_new_packet(); ``` you need to pass an function inside like this:
+<br>Special thanks to FatalSheep and CinderFire for the old basic networking tutorial at the Game maker studio forum (rest in peace tutorial.. XD)
+
+## Creating Packets
+Creating packets is simple: on the client side you can call the the function ``` sn_send_new_packet(); ``` or ``` sn_send_new_nodata_packet(); ``` from the library.
+<br> For the ``` sn_send_new_packet(); ``` you need to pass an function inside like this:
 ```gml 
   // Packet with informations to send to the server.
   // You can use any parameter name inside the function, but remember that the whatever the name you chose, it will have the buffer object created by the sn_send_new_packet() inside it.
@@ -70,18 +61,16 @@ And last but not least, inside the client (Object Obj_NetController on game make
 ```
 And thats how you set up packets on the server! :)
 
-<br>
-The server has some basic features, and at this point you can only use the Auth Server. Or if you just want to make the auth and game server in the same place, you can build your packets inside the project and edit it like you want.
+## Features
+The server has some basic features, but at this point you can only use the Auth Server. Or if you just want to make the auth and game server in the same place, you can build your packets inside the project and edit it like you want.
 <br><br>The following features comes along the server, such as:
 
   - Complete TCP Handler;
-
   - Basic Packet Decrypting;
-
   - BufferStream system.
   - Packet list.
   - Disconnection handler.
-  - Ping handler. (20ms average + true ms from each packet sent).
+  - Ping handler. (15ms average + true ms from each packet sent).
   - Initial packet for connection.
 <br><br>
 Any questions, please drop a message at my discord: yuuto.x
