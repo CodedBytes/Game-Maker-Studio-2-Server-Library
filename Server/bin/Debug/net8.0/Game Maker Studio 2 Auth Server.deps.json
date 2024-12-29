@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Game Maker Studio 2 Auth Server/1.0.0": {
+        "runtime": {
+          "Game Maker Studio 2 Auth Server.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Game Maker Studio 2 Auth Server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

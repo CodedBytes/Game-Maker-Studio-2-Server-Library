@@ -1,0 +1,14 @@
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\bin\Debug\net8.0\Game Maker Studio 2 Auth Server.exe
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\bin\Debug\net8.0\Game Maker Studio 2 Auth Server.deps.json
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\bin\Debug\net8.0\Game Maker Studio 2 Auth Server.runtimeconfig.json
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\bin\Debug\net8.0\Game Maker Studio 2 Auth Server.dll
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\bin\Debug\net8.0\Game Maker Studio 2 Auth Server.pdb
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\obj\Debug\net8.0\Game Maker Studio 2 Auth Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\obj\Debug\net8.0\Game Maker Studio 2 Auth Server.AssemblyInfoInputs.cache
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\obj\Debug\net8.0\Game Maker Studio 2 Auth Server.AssemblyInfo.cs
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\obj\Debug\net8.0\Game Maker Studio 2 Auth Server.csproj.CoreCompileInputs.cache
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\obj\Debug\net8.0\Game Maker Studio 2 Auth Server.dll
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\obj\Debug\net8.0\refint\Game Maker Studio 2 Auth Server.dll
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\obj\Debug\net8.0\Game Maker Studio 2 Auth Server.pdb
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\obj\Debug\net8.0\Game Maker Studio 2 Auth Server.genruntimeconfig.cache
+C:\Users\joao\source\repos\Game Maker Studio 2 Auth Server\obj\Debug\net8.0\ref\Game Maker Studio 2 Auth Server.dll
