@@ -13,6 +13,23 @@ In order to compile the server you will need to install Visual Studio 2022 Commu
 
 The server is prepared to be compiled either for x86 or x64 bits processors, and it should be able to run it on windows, linux, and macOs systems without further problems.
 
+## A preliminary packet architecture explanation (Hexadecimal)
+Usually data packets, from game maker and any other server that uses any kind of buffer stream or udp stream of data, comes to the server in a Hexadecimal composition.
+Packets are essentially hexadecimal data streams and the server is resposible to decrypt it and turn it into readable data, so we can manipulate it more easily.
+
+The packet in hexadecimal is made by 3 sections:
+- packet id;
+- packet data;
+- end of the packet;
+
+Let's suppose that i wanna make a packet, its number will be number 1000 and it's data is composed by one string: ``` hello world ```. <br>
+The hexadecimal for this packet will be: ``` 03 E8 68 65 6C 6C 6F 20 77 6F 72 6C 64 00 ```.<br>
+The first part of the packet: ``` 03 E8 ``` it means the number of the packet which is the number 1000, next we have the ``` 68 65 6C 6C 6F 20 77 6F 72 6C 64 ``` which means 'hello world', and the last ``` 00 ``` it's a blank space which means the end of the packet.
+
+With this knowledge you can pretty much understand how packets is made of, and you can also create your own raw packets using hexadecimals, without using the game maker client to do so.<br>
+
+Note that between 'hello' (``` 68 65 6C 6C 6F ```) and 'world' (``` 77 6F 72 6C 64 ```) theres a ``` 20 ``` value which means the space character, it differs from ``` 00 ``` which is literally blank, so if you're gonna adventure yourself in making raw packets, take a note that those two hex are different, one for string value and another for ending the packet or data stream.
+
 ## Creating Packets
 Creating packets is simple and heres the tutorial of it. <br>
 
